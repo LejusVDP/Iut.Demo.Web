@@ -5,7 +5,7 @@
       "Humanizer.Core/2.8.26": {
         "type": "package",
         "compile": {
-          "lib/netstandard2.0/Humanizer.dll": {}
+          "lib/netstandard2.0/_._": {}
         },
         "runtime": {
           "lib/netstandard2.0/Humanizer.dll": {}
@@ -10258,24 +10258,26 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Jules\\.nuget\\packages\\": {}
+    "C:\\Users\\Pc\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Jules\\Documents\\GitHub\\Iut.Demo.Web\\Iut.Demo.Web\\Iut.Demo.Web.csproj",
+      "projectUniqueName": "C:\\Users\\Pc\\Documents\\GitHub\\Iut.Demo.Web\\Iut.Demo.Web\\Iut.Demo.Web.csproj",
       "projectName": "Iut.Demo.Web",
-      "projectPath": "C:\\Users\\Jules\\Documents\\GitHub\\Iut.Demo.Web\\Iut.Demo.Web\\Iut.Demo.Web.csproj",
-      "packagesPath": "C:\\Users\\Jules\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Jules\\Documents\\GitHub\\Iut.Demo.Web\\Iut.Demo.Web\\obj\\",
+      "projectPath": "C:\\Users\\Pc\\Documents\\GitHub\\Iut.Demo.Web\\Iut.Demo.Web\\Iut.Demo.Web.csproj",
+      "packagesPath": "C:\\Users\\Pc\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Pc\\Documents\\GitHub\\Iut.Demo.Web\\Iut.Demo.Web\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Jules\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Pc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -10325,6 +10327,8 @@
             "version": "[6.0.3, )"
           },
           "Microsoft.EntityFrameworkCore.Tools": {
+            "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+            "suppressParent": "All",
             "target": "Package",
             "version": "[6.0.3, )"
           },
@@ -10351,7 +10355,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.102\\RuntimeIdentifierGraph.json"
       }
     }
   }
