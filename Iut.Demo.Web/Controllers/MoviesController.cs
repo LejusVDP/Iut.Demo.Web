@@ -21,16 +21,30 @@ namespace Iut.Demo.Web.Controllers
         }
 
         // GET: Movies
-        public async Task<IActionResult> Index(string searchString)
+        public async Task<IActionResult> Index(string searchString, string movieGenre)
         {
             var movies = _context.Movie.AsQueryable();
+            var genres = _context.Movie.Select(m => m.Genre).Distinct();
 
             if (!String.IsNullOrWhiteSpace(searchString))
             {
                 movies = movies.Where(m => m.Title!.Contains(searchString));
             }
+            
+            if (!String.IsNullOrWhiteSpace(movieGenre))
+            {
+                movies = movies.Where(m => m.Title!.Contains(movieGenre));
+            }
 
-            return View(await movies.ToListAsync());
+            MovieGenreViewModel viewModel = new MovieGenreViewModel
+            {
+                Genres = new SelectList(await genres.ToListAsync()),
+                Movies = await movies.ToListAsync(),
+                MovieGenre = movieGenre,
+                SearchString = searchString,
+            };
+
+            return View(viewModel);
         }
 
         // GET: Movies/Details/5
