@@ -1,0 +1,78 @@
+html {
+    --echantillon-size : 25vmin;
+    --point-size : 25px;
+}
+
+#zone-jeu {
+    padding-top: 20vw;
+    display: grid;
+    grid-template-rows: 2;
+    grid-template-columns: 1;
+
+}
+
+#zone-cibles {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    top: calc( var(--echantillon-size) / 2 + var(--point-size));
+}
+
+
+#point-rouge-box {
+    padding-left: 15%;
+    transform-origin: top right;
+    transform: rotate(60deg);
+}
+
+#point-vert-box {
+    justify-content: right;
+    padding-right: 15%;
+    transform-origin: top left;
+    transform: rotate(-75deg);
+}
+
+.point-box {
+    display: flex;
+    width: 50%;
+}
+
+
+.point {
+    height: var(--point-size);
+    width: var(--point-size);
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+#point_rouge {
+    background-color: red;
+}
+
+#point_vert {
+    background-color: green;
+}
+
+#cercle1 {
+    /*position: absolute;*/
+    top: 200px;
+    left: 200px;
+    border-radius: 50%;
+    padding: 30px;
+    background: rgba(45, 5, 119, 0.1);
+}
+
+#cercle2 {
+    /*position: absolute;*/
+    top: 200px;
+    left: 200px;
+    border-radius: 50%;
+    padding: 30px;
+    background: rgba(45, 5, 119, 0.1);
+}
+
+#echantillon {
+    margin: auto;
+    width: var(--echantillon-size);
+    height: var(--echantillon-size);
+}
